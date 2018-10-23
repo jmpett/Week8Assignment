@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Owner</title>
+<script>
+function validateForm() {
+    var y = document.forms["searchOwner"]["owner"].value;
+    if (y == "") {
+        alert("Owner must be filled out");
+        return false;
+    }
+} 
+</script>
+</head>
+<body>
+ <form name="searchOwner" action = "searchOwnerServlet" method="post" onsubmit="return validateForm()" >
+ Owner: <input type = "text" name = "owner">
+ <input type = "submit" value="Search Owner">
+</form>
+<a href = "index.html"> Back to main menu</a><br />
+<a href = "searchOwner.html">Search on player via owner</a><br />
+</body>
+</html>
